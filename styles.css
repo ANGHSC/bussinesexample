@@ -1,0 +1,259 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 60px;
+    margin-left: 20px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    background-color: #007BFF;
+    border-radius: 30px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 150px 0;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    margin: 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about .split-screen {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#about .split-screen .content {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 8px;
+}
+
+#about .split-screen .image {
+    flex: 1;
+    padding: 20px;
+}
+
+#about .split-screen img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.portfolio-item {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.testimonial {
+    text-align: center;
+    margin: 20px 0;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonial footer {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1.1rem;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 60px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007BFF;
+}
